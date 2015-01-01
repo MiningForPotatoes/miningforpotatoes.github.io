@@ -1,6 +1,6 @@
 *.db
 /old
 /.sass-cache
-/node_modules
 Gruntfile.js
 /sass
+/node_modules
