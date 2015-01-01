@@ -5,40 +5,5 @@
 	@include box-sizing(border-box);
 	margin: 0px;
 	padding:0px;
-	font-family: "Bebas-Neue", serif;
 	color:white;
-}
-
-#wrapper{
-	width:70%;
-	position:absolute;
-	top:0;
-	right:0;
-	bottom:0;
-	left:0;
-	margin:auto;
-}
-
-body{
-	background: #141313;
-	height:100%;
-	width:100%;
-}
-
-a{
-    text-decoration: none;
-}
-
-li{
-    list-style-type: none;
-    display: inline-block;
-    &::after{
-        content:" ×";
-    }
-    &:last-child::after{
-    content: no-open-quote;
-    }
-    a:hover{
-        color:#e3e3e3;
-    }
 }
