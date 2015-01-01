@@ -1,9 +1,0 @@
-{
-  "type": "sftp",
-  "host": "miningforpotatoes.com",
-  "user": "miningforpotatoes",
-  "password": "miningforcarrots69",
-  "port": "22",
-  "remote_path": "/example/path",
-  "ssh_key_file": "~/.ssh/id_rsa"
-}
