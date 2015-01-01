@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* line 4, ../sass/style.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Bebas-Neue", serif;
+  color: white;
+}
+
+/* line 12, ../sass/style.scss */
+#wrapper {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* line 22, ../sass/style.scss */
+body {
+  background: #141313;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 28, ../sass/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 32, ../sass/style.scss */
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+/* line 35, ../sass/style.scss */
+li::after {
+  content: " ×";
+}
+/* line 38, ../sass/style.scss */
+li:last-child::after {
+  content: no-open-quote;
+}
+/* line 41, ../sass/style.scss */
+li a:hover {
+  color: #e3e3e3;
+}
