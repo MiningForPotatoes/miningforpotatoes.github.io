@@ -1,7 +1,2 @@
 *.db
 /old
-/.sass-cache
-Gruntfile.js
-/sass
-/node_modules
-package.json
