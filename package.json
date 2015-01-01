@@ -1,0 +1,22 @@
+{
+  "name": "mfp-website",
+  "version": "1.0.0",
+  "description": "Mining For Potatoes Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": {
+    "name": "MFP Staff",
+    "url": "http://miningfoprotatoes.github.io/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "^0.12.0",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-csslint": "^0.3.1",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
