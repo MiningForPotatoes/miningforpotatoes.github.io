@@ -1369,6 +1369,15 @@ background-color:#FF2626;
 color:white;
 }
 
+li a.github{
+color:#777777;
+}
+
+li a.github:hover{
+background-color:#1c1c1c;
+color:white;
+}
+
 /*REDDIT*/
 li a.reddit{
 color:#777777;
@@ -1501,7 +1510,7 @@ width:368px;
 padding:3px;
 float:left;
 width:5%;
-font-size:.8em;
+font-size:.4em;
 position:fixed;
 top:5px;
 left:5px;
