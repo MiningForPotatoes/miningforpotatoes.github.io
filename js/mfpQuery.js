@@ -14,7 +14,7 @@ xhr.onreadystatechange = function() {
         query.innerHTML += "<img src=\"http://cravatar.eu/head/" + data.sample[i].name + "/48\" data-tooltip=\"text\" title=\"" + data.sample[i].name + "\"></img>";
       };
     } else {
-      query.innerHTML("The server is Offline :(");
+      query.innerHTML = "The server is Offline :(";
     }
   }
 }
