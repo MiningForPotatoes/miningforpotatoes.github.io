@@ -232,4 +232,9 @@ ul li :not(:first-child) {
   .nav {
     display: block;
   }
+
+  /* line 97, ../sass/style.scss */
+  .hero {
+    top: 25vh;
+  }
 }
