@@ -7,8 +7,6 @@ function toggleNav(){
     $('#bar-2').addClass('bar-2-x');
     $('#bar-4').addClass('bar-4-x');
 
-	$("#links").removeClass("animated rotateOutUpLeft");
-	$("#links").addClass("animated rotateInUpLeft");
 	$("#links").removeClass("hidden");
   } else {
     $('#outer-nav-control').attr('data-icon','hamburger');
@@ -17,8 +15,6 @@ function toggleNav(){
     $('#bar-2').removeClass('bar-2-x');
     $('#bar-4').removeClass('bar-4-x');
 
-	$("#links").removeClass("animated rotateInUpLeft");
-	$("#links").addClass("animated rotateOutUpLeft");
 
 	$("#links").addClass("hidden");
   }
@@ -26,3 +22,7 @@ function toggleNav(){
 $('.navigation').click(function(){
   toggleNav();
 });
+
+$('.navigation').addEventListener('touchstart', function(event) {
+    toggleNav();
+}, false);
