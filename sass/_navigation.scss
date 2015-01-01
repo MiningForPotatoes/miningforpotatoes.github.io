@@ -1,0 +1,97 @@
+// Navigation //
+.navigation {
+    margin: 10px;
+    background: $background;
+    z-index:10;
+}
+#links {
+    width: 140px;
+    position:fixed;
+    top:76px;
+    left:0px;
+}
+#links li {
+    list-style-type: none;
+    padding: 15px;
+    &:hover {
+        background: darken($background, 20%);
+        -webkit-transition: .1s cubic-bezier(.31, .71, .81, .23);
+        transition: .1s cubic-bezier(.31, .71, .81, .23);
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: #ffe8e8;
+        }
+    }
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+.transition {
+    -webkit-transition: all .4s cubic-bezier(1, .31, 0, .71);
+    transition: all .4s cubic-bezier(1, .31, 0, .71);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#outer-nav-control {
+    background: $background;
+    display: inline-block;
+    height: 100%;
+    padding: 1.25em;
+    cursor: pointer;
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:66px;
+}
+#nav-control {
+    height: 1.25em;
+    width: 1.6em;
+    position: relative;
+}
+.hamburger-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(235, 235, 235);
+}
+#bar-2,
+#bar-4 {
+    top: 50%;
+}
+#bar-3 {
+    top: 100%;
+}
+#outer-nav-control:hover #nav-control .hamburger-line {
+    background: rgba(255, 255, 255, 0.9);
+}
+#outer-nav-control:active #nav-control .hamburger-line {
+    background: rgb(217, 217, 217);
+}
+.hide-hamburger-line {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+#bar-2.bar-2-x {
+    width: 150%;
+    left: -25%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#bar-4.bar-4-x {
+    width: 150%;
+    left: -25%;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    opacity: 1;
+    filter: alpha(opacity=100);
+}

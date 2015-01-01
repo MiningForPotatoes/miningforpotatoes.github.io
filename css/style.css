@@ -1,8 +1,235 @@
-/* line 4, ../sass/style.scss */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+/* line 2, ../sass/_navigation.scss */
+.navigation {
+  margin: 10px;
+  background: #383838;
+  z-index: 10;
+}
+
+/* line 7, ../sass/_navigation.scss */
+#links {
+  width: 140px;
+  position: fixed;
+  top: 76px;
+  left: 0px;
+}
+
+/* line 13, ../sass/_navigation.scss */
+#links li {
+  list-style-type: none;
+  padding: 15px;
+}
+/* line 16, ../sass/_navigation.scss */
+#links li:hover {
+  background: #050505;
+  -webkit-transition: 0.1s cubic-bezier(0.31, 0.71, 0.81, 0.23);
+  transition: 0.1s cubic-bezier(0.31, 0.71, 0.81, 0.23);
+}
+/* line 21, ../sass/_navigation.scss */
+#links li a {
+  color: white;
+  text-decoration: none;
+}
+/* line 24, ../sass/_navigation.scss */
+#links li a:hover {
+  color: #ffe8e8;
+}
+
+/* line 29, ../sass/_navigation.scss */
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* line 33, ../sass/_navigation.scss */
+.transition {
+  -webkit-transition: all 0.4s cubic-bezier(1, 0.31, 0, 0.71);
+  transition: all 0.4s cubic-bezier(1, 0.31, 0, 0.71);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 39, ../sass/_navigation.scss */
+#outer-nav-control {
+  background: #383838;
+  display: inline-block;
+  height: 100%;
+  padding: 1.25em;
+  cursor: pointer;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 66px;
+}
+
+/* line 50, ../sass/_navigation.scss */
+#nav-control {
+  height: 1.25em;
+  width: 1.6em;
+  position: relative;
+}
+
+/* line 55, ../sass/_navigation.scss */
+.hamburger-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ebebeb;
+}
+
+/* line 63, ../sass/_navigation.scss */
+#bar-2,
+#bar-4 {
+  top: 50%;
+}
+
+/* line 67, ../sass/_navigation.scss */
+#bar-3 {
+  top: 100%;
+}
+
+/* line 70, ../sass/_navigation.scss */
+#outer-nav-control:hover #nav-control .hamburger-line {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* line 73, ../sass/_navigation.scss */
+#outer-nav-control:active #nav-control .hamburger-line {
+  background: #d9d9d9;
+}
+
+/* line 76, ../sass/_navigation.scss */
+.hide-hamburger-line {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/* line 80, ../sass/_navigation.scss */
+#bar-2.bar-2-x {
+  width: 150%;
+  left: -25%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* line 89, ../sass/_navigation.scss */
+#bar-4.bar-4-x {
+  width: 150%;
+  left: -25%;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* line 6, ../sass/style.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-family: "Open Sans", Helvetica, Arial, serif, sans-serif;
+  transition: .2s;
+}
+
+/* line 15, ../sass/style.scss */
+body, html {
+  background: url(../images/background.png) no-repeat center center fixed;
+}
+
+/* line 19, ../sass/style.scss */
+a {
+  text-decoration: none;
+  color: white;
+}
+/* line 22, ../sass/style.scss */
+a:hover {
+  color: #cccccc;
+}
+
+/* line 27, ../sass/style.scss */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  color: white;
+  background: #383838;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 38, ../sass/style.scss */
+ul li {
+  list-style-type: none;
+  margin: 0px 100px;
+}
+/* line 41, ../sass/style.scss */
+ul li :first-child {
+  float: left;
+  font: 24px;
+  font-style: bold;
+  text-transform: uppercase;
+}
+/* line 47, ../sass/style.scss */
+ul li :not(:first-child) {
+  float: right;
+  margin: 0px 20px;
+}
+
+/* line 54, ../sass/style.scss */
+.hero {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 45vh;
+  left: 0;
+  right: 0;
+}
+
+/* line 64, ../sass/style.scss */
+.wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #cacaca;
+  z-index: 1;
+  color: #333;
+}
+
+/* line 75, ../sass/style.scss */
+.panel {
+  padding: 5%;
+  text-align: center;
+}
+/* line 79, ../sass/style.scss */
+.panel p {
+  padding: 1% 5%;
+}
+
+/* line 84, ../sass/style.scss */
+.nav {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  /* line 89, ../sass/style.scss */
+  header {
+    display: none;
+  }
+
+  /* line 93, ../sass/style.scss */
+  .nav {
+    display: block;
+  }
 }

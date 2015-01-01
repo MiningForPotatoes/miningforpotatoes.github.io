@@ -1,8 +1,96 @@
 @charset "UTF-8";
 @import "compass/css3";
+@import "variables";
+@import "navigation";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+ * {
+    @include box-sizing(border-box);
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", Helvetica, Arial, serif, sans-serif;
+    transition:.2s;
+}
 
-*{
-	@include box-sizing(border-box);
-	margin: 0px;
-	padding:0px;
+// Elements //
+body, html{
+    background: $background-image no-repeat center center fixed;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: darken(white, 20%);
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: white;
+    background: $background;
+    width: 100%;
+    z-index:10;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0px 100px;
+    :first-child {
+        float: left;
+        font:24px;
+        font-style: bold;
+        text-transform: uppercase;
+    }
+    :not(:first-child){
+        float: right;
+        margin:0px 20px;
+    }
+}
+
+// Utility Classes //
+.hero{
+    text-align: center;
+    color:white;
+    font-size:1.5rem;
+    position: fixed;
+    top:45vh;
+    left:0;
+    right:0;
+}
+
+.wrapper{
+    position: absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background: white;
+    border:1px solid darken(#e3e3e3,10%);
+    z-index: 1;
+    color: $text-color;
+}
+
+.panel{
+    padding:5%;
+    text-align:center;
+
+    p{
+        padding:1% 5%;
+    }
+}
+
+.nav{
+    display: none;
+}
+// Media Queries //
+@media screen and (max-width:760px){
+    header{
+        display: none;
+    }
+
+    .nav{
+        display: block;
+    }
 }
