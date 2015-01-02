@@ -51,6 +51,10 @@ ul li {
 }
 
 // Utility Classes //
+header{
+    height:62px;
+}
+
 .hero{
     text-align: center;
     color:white;
@@ -84,6 +88,29 @@ ul li {
 .nav{
     display: none;
 }
+
+img.logo{
+    height:32px;
+    position:relative;
+    bottom:4px;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    opacity: 1;
+    &:hover{
+        -webkit-transition: .1s ease-in-out;
+        transition: .1s ease-in-out;
+        opacity: 0;
+    }
+    &.colored{
+        right:52px;
+        opacity:0;
+        &:hover{
+            opacity:1;
+        }
+    }
+}
+
+
 // Media Queries //
 @media screen and (max-width:760px){
     header{
@@ -98,3 +125,5 @@ ul li {
         top:25vh;
     }
 }
+
+

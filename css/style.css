@@ -185,6 +185,11 @@ ul li :not(:first-child) {
 }
 
 /* line 54, ../sass/style.scss */
+header {
+  height: 62px;
+}
+
+/* line 58, ../sass/style.scss */
 .hero {
   text-align: center;
   color: white;
@@ -195,7 +200,7 @@ ul li :not(:first-child) {
   right: 0;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 .wrapper {
   position: absolute;
   top: 100%;
@@ -207,33 +212,58 @@ ul li :not(:first-child) {
   color: #333;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .panel {
   padding: 5%;
   text-align: center;
 }
-/* line 79, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .panel p {
   padding: 1% 5%;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .nav {
   display: none;
 }
 
+/* line 92, ../sass/style.scss */
+img.logo {
+  height: 32px;
+  position: relative;
+  bottom: 4px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  opacity: 1;
+}
+/* line 99, ../sass/style.scss */
+img.logo:hover {
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  opacity: 0;
+}
+/* line 104, ../sass/style.scss */
+img.logo.colored {
+  right: 52px;
+  opacity: 0;
+}
+/* line 107, ../sass/style.scss */
+img.logo.colored:hover {
+  opacity: 1;
+}
+
 @media screen and (max-width: 760px) {
-  /* line 89, ../sass/style.scss */
+  /* line 116, ../sass/style.scss */
   header {
     display: none;
   }
 
-  /* line 93, ../sass/style.scss */
+  /* line 120, ../sass/style.scss */
   .nav {
     display: block;
   }
 
-  /* line 97, ../sass/style.scss */
+  /* line 124, ../sass/style.scss */
   .hero {
     top: 25vh;
   }
