@@ -206,7 +206,7 @@ header {
   top: 100%;
   left: 0;
   width: 100%;
-  background: white;
+  background: url(../images/background.png) center center fixed;
   border: 1px solid #cacaca;
   z-index: 1;
   color: #333;
@@ -217,17 +217,42 @@ header {
   padding: 5%;
   text-align: center;
 }
-/* line 83, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .panel p {
   padding: 1% 5%;
 }
-
+/* line 85, ../sass/style.scss */
+.panel.intro, .panel.tal {
+  background: white;
+}
 /* line 88, ../sass/style.scss */
+.panel.info {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+/* line 91, ../sass/style.scss */
+.panel.info .column {
+  padding: 4px;
+  width: 29%;
+  display: inline-block;
+}
+/* line 95, ../sass/style.scss */
+.panel.info .column.specs {
+  position: relative;
+  bottom: 152px;
+}
+/* line 99, ../sass/style.scss */
+.panel.info .column.about {
+  position: relative;
+  bottom: 44px;
+}
+
+/* line 107, ../sass/style.scss */
 .nav {
   display: none;
 }
 
-/* line 92, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 img.logo {
   height: 32px;
   position: relative;
@@ -236,35 +261,58 @@ img.logo {
   transition: .2s ease-in-out;
   opacity: 1;
 }
-/* line 99, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 img.logo:hover, img.logo.hover {
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
   opacity: 0;
 }
-/* line 104, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 img.logo.colored {
   right: 52px;
   opacity: 0;
 }
-/* line 107, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 img.logo.colored:hover, img.logo.colored.hover {
   opacity: 1;
 }
 
+/* line 132, ../sass/style.scss */
+.column {
+  width: 30%;
+  display: inline-block;
+  height: 200px;
+}
+/* line 136, ../sass/style.scss */
+.column.specs {
+  position: relative;
+  bottom: 132px;
+}
+/* line 140, ../sass/style.scss */
+.column.about {
+  position: relative;
+  bottom: 35px;
+}
+
 @media screen and (max-width: 760px) {
-  /* line 116, ../sass/style.scss */
+  /* line 148, ../sass/style.scss */
   header {
     display: none;
   }
 
-  /* line 120, ../sass/style.scss */
+  /* line 152, ../sass/style.scss */
   .nav {
     display: block;
   }
 
-  /* line 124, ../sass/style.scss */
+  /* line 156, ../sass/style.scss */
   .hero {
     top: 25vh;
+  }
+
+  /* line 160, ../sass/style.scss */
+  .column {
+    width: 100%;
+    display: block;
   }
 }
