@@ -25,10 +25,8 @@ $('.navigation').click(function(){
 
 $(".bar").mouseenter(function(){
     $("img.logo").addClass("hover");
-    console.log("hoverOn");
 });
 
 $(".bar").mouseleave(function(){
     $("img.logo").removeClass("hover");
-    console.log("hoverOff");
 });
