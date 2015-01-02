@@ -237,7 +237,7 @@ img.logo {
   opacity: 1;
 }
 /* line 99, ../sass/style.scss */
-img.logo:hover {
+img.logo:hover, img.logo.hover {
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
   opacity: 0;
@@ -248,7 +248,7 @@ img.logo.colored {
   opacity: 0;
 }
 /* line 107, ../sass/style.scss */
-img.logo.colored:hover {
+img.logo.colored:hover, img.logo.colored.hover {
   opacity: 1;
 }
 

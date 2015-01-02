@@ -22,3 +22,13 @@ function toggleNav(){
 $('.navigation').click(function(){
   toggleNav();
 });
+
+$(".bar").mouseenter(function(){
+    $("img.logo").addClass("hover");
+    console.log("hoverOn");
+});
+
+$(".bar").mouseleave(function(){
+    $("img.logo").removeClass("hover");
+    console.log("hoverOff");
+});
