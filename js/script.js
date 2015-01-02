@@ -22,7 +22,3 @@ function toggleNav(){
 $('.navigation').click(function(){
   toggleNav();
 });
-
-$('.navigation').addEventListener('touchstart', function(event) {
-    toggleNav();
-}, false);
