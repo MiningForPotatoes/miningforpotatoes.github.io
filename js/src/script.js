@@ -30,3 +30,4 @@ $(".bar").mouseenter(function(){
 $(".bar").mouseleave(function(){
     $("img.logo").removeClass("hover");
 });
+
