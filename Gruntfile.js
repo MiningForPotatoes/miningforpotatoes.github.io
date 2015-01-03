@@ -27,17 +27,30 @@ module.exports = function(grunt) {
 //		}
 
         uglify: {
-          build: {
-            src: ['js/libs/*.js','js/src/*.js'],
-            dest: 'js/global.js'
-          }
+            options: {
+                sourceMap: true,
+                sourceMapName: 'js/global.source.map'
+            },
+
+            build: {
+                src: ['js/libs/*.js','js/src/*.js'],
+                dest: 'js/global.js'
+            }
         }
+
+//        connect: {
+//            server: {
+//                options: {
+//                    port: 8000,
+//                    hostname: 'mfp.dev',
+//                }
+//            }
+//        }
 	});
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-csslint');
-	grunt.loadNpmTasks('grunt-contrib-coffee');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
-	grunt.registerTask('default',['watch','csslint','uglify','coffee']);
+	grunt.registerTask('default',['watch','uglify','connect']);
 }
