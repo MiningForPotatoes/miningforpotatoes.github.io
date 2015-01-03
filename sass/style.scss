@@ -137,6 +137,23 @@ img[src^="images/pic"]{
     margin:5px;
 }
 
+.scroll-arrow{
+    position:absolute;
+    bottom:10px;
+    text-align:center;
+
+    .line{
+        border:1px solid white;
+        &.one{
+            transform: rotate(45deg);
+        }
+
+        &.two{
+
+        }
+    }
+}
+
 // Media Queries //
 @media screen and (max-width:760px){
     header{

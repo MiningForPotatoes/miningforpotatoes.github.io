@@ -16,6 +16,11 @@ module.exports = function(grunt) {
 				files: '**/*.scss',
 				tasks: ['compass']
 			}
+
+            js: {
+                files: '**/*.js',
+                tasks: ['uglify'],
+            }
 		},
 
 //		coffee: {
@@ -43,6 +48,7 @@ module.exports = function(grunt) {
 //                options: {
 //                    port: 8000,
 //                    hostname: 'mfp.dev',
+//                    base: '',
 //                }
 //            }
 //        }
@@ -50,7 +56,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-connect');
+    //grunt.loadNpmTasks('grunt-contrib-connect');
 
-	grunt.registerTask('default',['watch','uglify','connect']);
+	grunt.registerTask('default',['watch','uglify']);
 }
