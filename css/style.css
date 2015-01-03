@@ -272,11 +272,6 @@ img.logo.colored:hover, img.logo.colored.hover {
 }
 
 /* line 127, ../sass/style.scss */
-.images {
-  color: white;
-}
-
-/* line 132, ../sass/style.scss */
 img[src^="images/pic"] {
   max-width: 100%;
   box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.25);
@@ -285,22 +280,22 @@ img[src^="images/pic"] {
 }
 
 @media screen and (max-width: 760px) {
-  /* line 141, ../sass/style.scss */
+  /* line 136, ../sass/style.scss */
   header {
     display: none;
   }
 
-  /* line 145, ../sass/style.scss */
+  /* line 140, ../sass/style.scss */
   .nav {
     display: block;
   }
 
-  /* line 149, ../sass/style.scss */
+  /* line 144, ../sass/style.scss */
   .hero {
     top: 25vh;
   }
 
-  /* line 153, ../sass/style.scss */
+  /* line 148, ../sass/style.scss */
   .panel.info .column {
     width: 100%;
     display: block;
