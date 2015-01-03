@@ -1,5 +1,10 @@
 *.db
-/old
-/.sass-cache
 *.pdn
 *.log
+*.gz
+*.zip
+*.dat
+
+old
+.sass-cache
+node_modules
