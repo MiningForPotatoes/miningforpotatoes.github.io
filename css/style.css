@@ -235,13 +235,18 @@ header {
   width: 29%;
   margin-bottom: 10%;
 }
+/* line 96, ../sass/style.scss */
+.panel.images {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
 
-/* line 98, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .nav {
   display: none;
 }
 
-/* line 102, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 img.logo {
   height: 32px;
   position: relative;
@@ -250,39 +255,52 @@ img.logo {
   transition: .2s ease-in-out;
   opacity: 1;
 }
-/* line 109, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 img.logo:hover, img.logo.hover {
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
   opacity: 0;
 }
-/* line 114, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 img.logo.colored {
   right: 52px;
   opacity: 0;
 }
-/* line 117, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 img.logo.colored:hover, img.logo.colored.hover {
   opacity: 1;
 }
 
+/* line 127, ../sass/style.scss */
+.images {
+  color: white;
+}
+
+/* line 132, ../sass/style.scss */
+img[src^="images/pic"] {
+  max-width: 100%;
+  box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  margin: 5px;
+}
+
 @media screen and (max-width: 760px) {
-  /* line 126, ../sass/style.scss */
+  /* line 141, ../sass/style.scss */
   header {
     display: none;
   }
 
-  /* line 130, ../sass/style.scss */
+  /* line 145, ../sass/style.scss */
   .nav {
     display: block;
   }
 
-  /* line 134, ../sass/style.scss */
+  /* line 149, ../sass/style.scss */
   .hero {
     top: 25vh;
   }
 
-  /* line 138, ../sass/style.scss */
+  /* line 153, ../sass/style.scss */
   .panel.info .column {
     width: 100%;
     display: block;
