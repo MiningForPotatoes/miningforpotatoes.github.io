@@ -16,11 +16,6 @@ module.exports = function(grunt) {
 				files: '**/*.scss',
 				tasks: ['compass']
 			}
-
-            js: {
-                files: '**/*.js',
-                tasks: ['uglify'],
-            }
 		},
 
 //		coffee: {
