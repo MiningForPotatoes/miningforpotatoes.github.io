@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 				options: {
 					sassDir: 'sass',
 					cssDir: 'css',
-                    //outputStyle: 'compressed'
+                    outputStyle: 'compressed',
 				}
 			}
 		},
@@ -18,18 +18,26 @@ module.exports = function(grunt) {
 			}
 		},
 
-		coffee: {
-  			compile: {
-    			files: {
-      				'js/script.js': 'coffee/script.coffee', // 1:1 compile into single file
-    			}
-  			}
-		}
+//		coffee: {
+//  			compile: {
+//    			files: {
+//      				'js/script.js': 'coffee/script.coffee', // 1:1 compile into single file
+//    			}
+//  			}
+//		}
+
+        uglify: {
+          build: {
+            src: ['js/libs/*.js','js/src/*.js'],
+            dest: 'js/global.js'
+          }
+        }
 	});
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-csslint');
 	grunt.loadNpmTasks('grunt-contrib-coffee');
+
 	grunt.registerTask('default',['watch','csslint','uglify','coffee']);
 }
