@@ -71,7 +71,6 @@ header{
     left:0;
     width:100%;
     background: $background-image center center fixed;
-    border:1px solid darken(#e3e3e3,10%);
     z-index: 1;
     color: $text-color;
 }
@@ -89,17 +88,9 @@ header{
         background: rgba(0, 0, 0, 0.4);
         color: white;
         .column{
-            padding:4px;
+            display: table-cell;
             width:29%;
-            display:inline-block;
-            &.specs{
-                position:relative;
-                bottom: 152px;
-            }
-            &.about{
-                position:relative;
-                bottom: 44px;
-            }
+            margin-bottom: 10%;
         }
     }
 }
@@ -129,19 +120,6 @@ img.logo{
     }
 }
 
-.column{
-    width:30%;
-    display:inline-block;
-    height:200px;
-    &.specs{
-        position:relative;
-        bottom: 132px;
-    }
-    &.about{
-        position:relative;
-        bottom: 35px;
-    }
-}
 
 // Media Queries //
 @media screen and (max-width:760px){
@@ -157,11 +135,10 @@ img.logo{
         top:25vh;
     }
 
-    .column{
+    .panel.info .column{
         width:100%;
         display:block;
     }
-
 }
 
 
