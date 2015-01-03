@@ -142,20 +142,19 @@
 /* line 15, ../sass/style.scss */
 body, html {
   background: url(../images/background.png) no-repeat center center fixed;
-  background-size: cover;
 }
 
-/* line 20, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 a {
   text-decoration: none;
   color: white;
 }
-/* line 23, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 a:hover {
   color: #cccccc;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 header {
   position: fixed;
   top: 0;
@@ -167,30 +166,30 @@ header {
   z-index: 10;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 ul li {
   list-style-type: none;
   margin: 0px 100px;
 }
-/* line 42, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 ul li :first-child {
   float: left;
   font: 24px;
   font-style: bold;
   text-transform: uppercase;
 }
-/* line 48, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 ul li :not(:first-child) {
   float: right;
   margin: 0px 20px;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 header {
   height: 62px;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .hero {
   text-align: center;
   color: white;
@@ -201,13 +200,14 @@ header {
   right: 0;
 }
 
-/* line 69, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 .wrapper {
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  background: url(../images/background.png) center center fixed;
+  background: url(../images/background.png) no-repeat center center fixed;
+  background-size: cover;
   z-index: 1;
   color: #333;
 }

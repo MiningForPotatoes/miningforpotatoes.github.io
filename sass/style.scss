@@ -14,7 +14,6 @@
 // Elements //
 body, html{
     background: $background-image no-repeat center center fixed;
-    background-size: cover;
 }
 
 a {
@@ -71,7 +70,8 @@ header{
     top:100%;
     left:0;
     width:100%;
-    background: $background-image center center fixed;
+    background: $background-image no-repeat center center fixed;
+    background-size: cover;
     z-index: 1;
     color: $text-color;
 }
