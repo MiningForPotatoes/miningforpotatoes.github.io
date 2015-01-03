@@ -81,19 +81,24 @@ header{
     p{
         padding:1% 5%;
     }
-    &.intro,&.tal{
+    &.intro,&.tal,&.rul,&.apply{
         background:white;
+        a{
+            color:black;
+        }
     }
-    &.info{
-        background: rgba(0, 0, 0, 0.4);
-        color: white;
+    &.footer{
+        background: $background;
+        color:white;
+    }
+    &.info,&.rules{
         .column{
             display: table-cell;
             width:29%;
             margin-bottom: 10%;
         }
     }
-    &.images{
+    &.images,&.info,&.rules{
         background: rgba(0, 0, 0, 0.4);
         color: white;
     }
@@ -145,10 +150,12 @@ img[src^="images/pic"]{
         top:25vh;
     }
 
-    .panel.info .column{
+    .panel.info .column, .panel.rules .column{
         width:100%;
         display:block;
     }
 }
 
-
+.text-danger{
+    color: #a94442;
+}
