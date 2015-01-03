@@ -221,32 +221,36 @@ header {
   padding: 1% 5%;
 }
 /* line 84, ../sass/style.scss */
-.panel.intro, .panel.tal {
+.panel.intro, .panel.tal, .panel.rul, .panel.apply {
   background: white;
 }
-/* line 87, ../sass/style.scss */
-.panel.info {
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
+/* line 86, ../sass/style.scss */
+.panel.intro a, .panel.tal a, .panel.rul a, .panel.apply a {
+  color: black;
 }
 /* line 90, ../sass/style.scss */
-.panel.info .column {
+.panel.footer {
+  background: #383838;
+  color: white;
+}
+/* line 95, ../sass/style.scss */
+.panel.info .column, .panel.rules .column {
   display: table-cell;
   width: 29%;
   margin-bottom: 10%;
 }
-/* line 96, ../sass/style.scss */
-.panel.images {
+/* line 101, ../sass/style.scss */
+.panel.images, .panel.info, .panel.rules {
   background: rgba(0, 0, 0, 0.4);
   color: white;
 }
 
-/* line 102, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .nav {
   display: none;
 }
 
-/* line 106, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 img.logo {
   height: 32px;
   position: relative;
@@ -255,23 +259,23 @@ img.logo {
   transition: .2s ease-in-out;
   opacity: 1;
 }
-/* line 113, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 img.logo:hover, img.logo.hover {
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
   opacity: 0;
 }
-/* line 118, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 img.logo.colored {
   right: 52px;
   opacity: 0;
 }
-/* line 121, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 img.logo.colored:hover, img.logo.colored.hover {
   opacity: 1;
 }
 
-/* line 127, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 img[src^="images/pic"] {
   max-width: 100%;
   box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.25);
@@ -280,24 +284,28 @@ img[src^="images/pic"] {
 }
 
 @media screen and (max-width: 760px) {
-  /* line 136, ../sass/style.scss */
+  /* line 141, ../sass/style.scss */
   header {
     display: none;
   }
 
-  /* line 140, ../sass/style.scss */
+  /* line 145, ../sass/style.scss */
   .nav {
     display: block;
   }
 
-  /* line 144, ../sass/style.scss */
+  /* line 149, ../sass/style.scss */
   .hero {
     top: 25vh;
   }
 
-  /* line 148, ../sass/style.scss */
-  .panel.info .column {
+  /* line 153, ../sass/style.scss */
+  .panel.info .column, .panel.rules .column {
     width: 100%;
     display: block;
   }
+}
+/* line 159, ../sass/style.scss */
+.text-danger {
+  color: #a94442;
 }
