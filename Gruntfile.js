@@ -7,12 +7,13 @@ module.exports = function(grunt) {
 					sassDir: 'sass',
 					cssDir: 'css',
                     outputStyle: 'compressed',
-				}
-			}
+				},
+			},
 		},
 
 		watch: {
             options: {
+                spawn: false,
                 dateFormat: function(time) {
                     var tm = new Date();
                     var hms = tm.getHours() + ":" + tm.getMinutes() + ":" + tm.getSeconds();
@@ -20,25 +21,16 @@ module.exports = function(grunt) {
                     grunt.log.writeln('Done in ' + time + 'ms at ' + hms.bold + ' on ' + dt.bold);
                     grunt.log.writeln('Waiting for more changes...'.cyan);
                 },
-                spawn: false,
-              },
+            },
 			css: {
                 files: ['**/*.scss'],
                 tasks: ['compass'],
             },
 
             js: {
-                files: ['js/src/*.js'],
+                files: ['js/libs/*.js','js/src/*.js'],
                 tasks: ['uglify'],
             },
-		},
-
-		coffee: {
-  			compile: {
-    			files: {
-      				'js/script.js': 'coffee/script.coffee', // 1:1 compile into single file
-    			}
-  			}
 		},
 
         uglify: {
@@ -50,7 +42,7 @@ module.exports = function(grunt) {
             build: {
                 src: ['js/libs/*.js','js/src/*.js'],
                 dest: 'js/global.js'
-            }
+            },
         },
 
         connect: {
@@ -59,9 +51,9 @@ module.exports = function(grunt) {
                     port: 8000,
                     hostname: 'miningforpotatoes',
                     base: '../miningforpotatoes.github.io',
-                }
-            }
-        }
+                },
+            },
+        },
 	});
 
 
