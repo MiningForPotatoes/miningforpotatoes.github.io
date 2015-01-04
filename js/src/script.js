@@ -31,3 +31,17 @@ $(".bar").mouseleave(function(){
     $("img.logo").removeClass("hover");
 });
 
+
+$(function () {
+    var platform = navigator.platform.toLowerCase();
+    if (platform.indexOf('win') == 0 || platform.indexOf('linux') == 0) {
+        if ($.browser.webkit) {
+             $.srSmoothscroll({
+                // defaults
+                step: 55,
+                speed: 400,
+                ease: 'swing'
+            });
+        }
+    }
+});
