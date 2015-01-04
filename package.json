@@ -2,7 +2,6 @@
     "name": "mfp-website",
     "version": "1.0.0",
     "description": "Mining For Potatoes Website",
-    "main": "index.html",
 
     "author": "jaylen14 (http://github.com/jaylen14)",
     "contributors": "qw3rtman (http://github.com/qw3rtman),
