@@ -1,17 +1,18 @@
 ::-webkit-scrollbar {
-    width: 12px;
+    width: $scrollbar-width;
+    z-index:-999999;
 }
 ::-webkit-scrollbar-track {
     position: fixed;
     top:0;
     right:0;
     height:100%;
-    background-color: transparent;
-    border-left: 1px solid #ccc;
+    background-color: $background;
+    border-left: 1px solid #222;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #464646;
+    background-color: $scrollbar-thumb;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #646464;
+    background-color: lighten($scrollbar-thumb,10%);
 }
