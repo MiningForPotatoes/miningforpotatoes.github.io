@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 		watch: {
             options: {
                 spawn: false,
-                livereload: 8000,
+                livereload: true,
                 dateFormat: function(time) {
                     var tm = new Date();
                     var hms = tm.getHours() + ":" + tm.getMinutes() + ":" + tm.getSeconds();
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
                 },
             },
 			css: {
-                files: ['**/*.scss'],
+                files: ['sass/*.scss'],
                 tasks: ['compass'],
             },
 
@@ -55,6 +55,15 @@ module.exports = function(grunt) {
                 },
             },
         },
+
+        autoprefixer: {
+            options: {
+              browsers: ['last 2 versions', 'ie 8', 'ie 9']
+            },
+            "prefix dat shit": {
+              src: 'css/*.css',
+            },
+          },
 	});
 
 
@@ -64,5 +73,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
 
-	grunt.registerTask('default',['uglify','connect','watch']);
+	grunt.registerTask('default',['uglify','autoprefixer','connect','watch']);
 }
