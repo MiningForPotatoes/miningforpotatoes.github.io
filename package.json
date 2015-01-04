@@ -4,8 +4,8 @@
     "description": "Mining For Potatoes Website",
     "main": "index.html",
 
-    "author": "MFP Staff (http://miningfoprotatoes.github.io/)",
-    "contributors": ["jaylen14 (http://github.com/jaylen14)","qw3rtman (http://github.com/qw3rtman)"],
+    "author": "jaylen14 (http://github.com/jaylen14)",
+    "contributors": "qw3rtman (http://github.com/qw3rtman),
     "license": "MIT",
 
     "devDependencies": {
