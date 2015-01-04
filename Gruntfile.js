@@ -14,6 +14,7 @@ module.exports = function(grunt) {
 		watch: {
             options: {
                 spawn: false,
+                livereload: 8000,
                 dateFormat: function(time) {
                     var tm = new Date();
                     var hms = tm.getHours() + ":" + tm.getMinutes() + ":" + tm.getSeconds();
@@ -59,6 +60,7 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
 
