@@ -1,0 +1,49 @@
+* {
+    @include box-sizing(border-box);
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", Helvetica, Arial, serif, sans-serif;
+    transition:.2s;
+}
+
+// Elements //
+body, html{
+    background: $background-image no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: darken(white, 20%);
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: white;
+    background: $background;
+    width: 100%;
+    z-index:10;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0px 100px;
+    :first-child {
+        float: left;
+        font:24px;
+        font-style: bold;
+        text-transform: uppercase;
+    }
+    :not(:first-child){
+        float: right;
+        margin:0px 20px;
+    }
+}

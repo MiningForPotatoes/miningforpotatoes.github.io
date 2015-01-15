@@ -1,0 +1,23 @@
+// Media Queries //
+@media screen and (max-width:760px){
+    header{
+        display: none;
+    }
+
+    .nav{
+        display: block;
+    }
+
+    .hero{
+        top:25vh;
+    }
+
+    .panel.info .column, .panel.rules .column{
+        width:100%;
+        display:block;
+    }
+}
+
+.text-danger{
+    color: #a94442;
+}

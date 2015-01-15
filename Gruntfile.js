@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+
 		compass: {
 			dist: {
 				options: {
@@ -49,7 +50,7 @@ module.exports = function(grunt) {
         connect: {
             server: {
                 options: {
-                    port: 8000,
+                    port: '8000',
                     hostname: 'miningforpotatoes',
                     base: '../miningforpotatoes.github.io',
                 },
@@ -60,7 +61,7 @@ module.exports = function(grunt) {
             options: {
               browsers: ['last 2 versions', 'ie 8', 'ie 9']
             },
-            "prefix dat shit": {
+            prefix: {
               src: 'css/*.css',
             },
           },
@@ -74,4 +75,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
 
 	grunt.registerTask('default',['uglify','autoprefixer','connect','watch']);
+	grunt.registerTask('compile',['uglify','autoprefixer','compass']);
+	grunt.registerTask('server', ['uglify','autoprefixer','connect']);
 }
